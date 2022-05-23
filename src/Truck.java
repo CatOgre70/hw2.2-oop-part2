@@ -4,7 +4,7 @@ public class Truck extends Car{
         super(modelName, wheelsCount);
     }
 
-    public static void checkTrailer(){
+    public void checkTrailer(){
         System.out.println("Проверяем прицеп");
     }
 
