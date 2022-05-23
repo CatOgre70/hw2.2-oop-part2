@@ -10,10 +10,10 @@ public class Main {
         Truck truck = new Truck("Volvo", 12);
         System.out.println("truck = " + truck);
 
-        ServiceStation serviceStation = new ServiceStation();
-        serviceStation.check(bicycle);
-        serviceStation.check(car);
-        serviceStation.check(truck);
+
+        bicycle.check();
+        car.check();
+        truck.check();
 
     }
 }

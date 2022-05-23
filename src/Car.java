@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Car extends Bicycle {
+public class Car extends Transport {
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
@@ -17,4 +17,14 @@ public class Car extends Bicycle {
                 ", wheelsCount=" + super.getWheelsCount() +
                 '}';
     }
+
+    public void check(){
+        System.out.println("Обслуживаем " + this.getModelName());
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            this.updateTyre(i+1);
+        }
+        this.checkEngine();
+
+    }
+
 }
