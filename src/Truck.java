@@ -4,7 +4,9 @@ public class Truck extends Transport{
         super(modelName, wheelsCount);
     }
 
-    public void checkEngine(){System.out.println("Проверяем двигатель");}
+    public void checkEngine(){
+        System.out.println("Проверяем двигатель");
+    }
 
     public void checkTrailer(){
         System.out.println("Проверяем прицеп");
